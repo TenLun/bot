@@ -9,14 +9,16 @@ class myextension {
 				blocks: [
 					{opcode: 'myblock',
 					blockType: Scratch.BlockType.COMMAND,
-					text: '我的积木',
-					arguments:{}
+					text: '[A] 我的积木',
+					arguments:{A:{
+                                		type: Scratch.ArgumentType.NUMBER,
+                                		defaultValue:1}
 					}
 				]
 			};
 		}
-		myblock(args) {
-			window.open('https://vdse.bdstatic.com//192d9a98d782d9c74c96f09db9378d93.mp4','_blank');
+		myblock({A}) {
+			return A+9;
 		}
 }
 Scratch.extensions.register(new myextension());
