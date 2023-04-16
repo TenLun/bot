@@ -8,11 +8,11 @@ class myextension {
 				color3: '#ff8829',
 				blocks: [
 					{opcode: 'myblock',
-					blockType: Scratch.BlockType.COMMAND,
+					blockType: Scratch.BlockType.REPORTER,
 					text: '[A] 我的积木',
 					arguments:{A:{
                                 		type: Scratch.ArgumentType.NUMBER,
-                                		defaultValue:1}
+                                		defaultValue:'1'}
 					}
 				]
 			};
