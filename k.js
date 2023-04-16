@@ -9,7 +9,7 @@ class myextension {
 				blocks: [
 					{opcode: 'myblock',
 					blockType: Scratch.BlockType.COMMAND,
-					text: "我的积木",
+					text: '我的积木',
 					arguments:{}
 					}
 				]
